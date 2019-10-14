@@ -1,0 +1,24 @@
+2019-08-29 14:54:47 pid:1 TypeError: Argument 2 passed to Workerman\Protocols\Text::input() must be an instance of Workerman\Connection\TcpConnection, instance of Workerman\Connection\UdpConnection given, called in F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php on line 2459 and defined in F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Protocols\Text.php:30
+Stack trace:
+#0 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(2459): Workerman\Protocols\Text::input('{"cmd":"REPORT_...', Object(Workerman\Connection\UdpConnection))
+#1 [internal function]: Workerman\Worker->acceptUdpConnection(Resource id #22)
+#2 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#3 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#5 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 F:\htdocs\workerman_mp\workerman-statistics\Applications\Statistics\start_finder.php(46): Workerman\Worker::runAll()
+#8 {main}
+2019-08-29 14:54:47 pid:1 Worker process terminated
+2019-08-29 14:55:07 pid:1 TypeError: Argument 2 passed to Workerman\Protocols\Text::input() must be an instance of Workerman\Connection\TcpConnection, instance of Workerman\Connection\UdpConnection given, called in F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php on line 2459 and defined in F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Protocols\Text.php:30
+Stack trace:
+#0 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(2459): Workerman\Protocols\Text::input('{"cmd":"REPORT_...', Object(Workerman\Connection\UdpConnection))
+#1 [internal function]: Workerman\Worker->acceptUdpConnection(Resource id #22)
+#2 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#3 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#4 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#5 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#6 F:\htdocs\workerman_mp\workerman-statistics\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#7 F:\htdocs\workerman_mp\workerman-statistics\Applications\Statistics\start_finder.php(46): Workerman\Worker::runAll()
+#8 {main}
+2019-08-29 14:55:07 pid:1 Worker process terminated
